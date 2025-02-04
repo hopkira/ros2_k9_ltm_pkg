@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
           'service = k9_ltm_srv.service_long_term_memory:main',
+          'client = k9_ltm_srv.client_long_term_memory:main',
         ],
     },
 )
