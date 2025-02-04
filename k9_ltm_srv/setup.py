@@ -20,8 +20,11 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-          'service = k9_ltm_srv.service_long_term_memory:main',
-          'client = k9_ltm_srv.client_long_term_memory:main',
+          'ltm_service = k9_ltm_srv.service_long_term_memory:main',
+          'ltm_remember = k9_ltm_srv.service_long_term_memory:main',
+          'ltm_query = k9_ltm_srv.service_long_term_memory:main',
+          'ltm_set_model = k9_ltm_srv.service_long_term_memory:main',
+          'ltm_client = k9_ltm_srv.client_long_term_memory:main',
         ],
     },
 )
